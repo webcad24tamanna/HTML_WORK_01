@@ -1,0 +1,73 @@
+/* Universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+/* element selector */
+body{
+    background-color: tomato;
+}
+/* id selector */
+#admin-box{
+    background-color: rgb(255, 38, 0);
+    width: 50%;
+    margin: 50px auto ;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+/* Desendent selector */
+#admin-box h1{
+font-size: 50px;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+form{
+    margin: 20px 0px;
+}
+/*Grouping selector */
+input, label{
+   display: block;
+   width: 90%;
+   margin: 5px auto; 
+}
+label{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    padding: 10px;
+    background-color: tomato;
+    color: white;
+}
+/* psudo element */
+input::placeholder{
+    color: white;
+} 
+/* attribute selector */
+input[type="submit"]{
+    width: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: ease-in-out 0.5s;
+}
+/* psudo class */
+input[type="submit"]:hover{
+background-color: white;
+color: tomato;
+}
+/* class selector */
+.pg{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+.pg a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+}
